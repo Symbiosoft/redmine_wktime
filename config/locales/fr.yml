@@ -94,6 +94,7 @@ fr:
   
   chkbox_prev_tmpl: Utiliser la semaine précédente comme gabarit
   chkbox_closed_issues: Inclure demandes fermées
+  label_chkbox_wktime_save_no_redirect: Rester sur la feuille courante lors de la sauvegarde
   
   error_te_save_failed: "Échec de la sauvegarde %{label}: %{error}"
   error_wktime_save_nothing: Rien à enregistrer

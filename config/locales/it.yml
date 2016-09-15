@@ -93,6 +93,7 @@ it:
   button_wk_unapprove: Unapprove
   chkbox_prev_tmpl: Modello della settimana precedente
   chkbox_closed_issues: Includi gli issues chiusi della settimana precedente
+  label_chkbox_wktime_save_no_redirect: Stay on current Timesheet on Save
   
   error_te_save_failed: "Could not save %{label}: %{error}"
   error_wktime_save_nothing: Niente da salvare

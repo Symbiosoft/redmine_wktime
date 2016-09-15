@@ -186,6 +186,7 @@ Redmine::Plugin.register :redmine_wktime do
              'wktime_issue_dd_width' => '250',
              'wktime_actv_dd_width' => '75',
 			 'wktime_closed_issue_ind' => '0',
+             'chkbox_wktime_save_no_redirect' => '0',
 			 'wktime_restr_min_hour' => '0',
 			 'wktime_min_hour_day' => '0',
 			 'wktime_restr_max_hour' => '0',

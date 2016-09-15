@@ -266,9 +266,12 @@ include QueriesHelper
 				#redirect_to :action => 'index' , :tab => params[:tab]
 				if params[:wktime_save_continue]
 					redirect_to :action => 'edit' , :startday => !@entries.present? ? @startday  : @startday+ 7, :user_id => @user.id, :project_id => params[:project_id]
-				else
-					redirect_to :action => 'edit' , :startday => !@entries.present? ? @startday  : @startday, :user_id => @user.id, :project_id => params[:project_id]
-					#redirect_to :action => 'index' , :tab => params[:tab]
+        else
+          if Setting.plugin_redmine_wktime['chkbox_wktime_save_no_redirect'].to_i == 1
+					  redirect_to :action => 'edit' , :startday => !@entries.present? ? @startday  : @startday, :user_id => @user.id, :project_id => params[:project_id]
+					else
+            redirect_to :action => 'index' , :tab => params[:tab]
+          end
 				end 
 			else
 				flash[:error] = respMsg

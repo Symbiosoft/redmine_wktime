@@ -5,6 +5,9 @@
 			<%= check_box_tag('settings[wktime_enable_report_module]', 1, @settings['wktime_enable_report_module'].to_i == 1) %> <label><%= l(:label_enable_report_module) %></label>
 		</p>
 		<p>
+			<%= check_box_tag('settings[chkbox_wktime_save_no_redirect]', 1, @settings['chkbox_wktime_save_no_redirect'].to_i == 1) %> <label><%= l(:label_chkbox_wktime_save_no_redirect) %></label>
+		</p>
+		<p>
 		<%= check_box_tag('settings[wktime_closed_issue_ind]', 1, @settings['wktime_closed_issue_ind'].to_i == 1) %> <label><%= l(:chkbox_closed_issues) %></label>
 		</p>		
 		<p>
